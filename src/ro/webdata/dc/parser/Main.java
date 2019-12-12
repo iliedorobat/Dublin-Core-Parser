@@ -1,0 +1,26 @@
+package ro.webdata.dc.parser;
+
+import ro.webdata.dc.parser.common.Constants;
+import ro.webdata.dc.parser.core.Parser;
+
+import java.util.ArrayList;
+
+public class Main {
+    private static final String FILE_FULL_PATH = Constants.WORKSPACE_PATH
+            + Constants.FILE_SEPARATOR + Constants.FILE_STORAGE;
+    private static final String[] FILE_NAMES = {
+            "dublin_core",
+            "metadata_europeana"
+    };
+
+    public static void main(String[] args) {
+        printQualifiers(FILE_FULL_PATH, FILE_NAMES);
+    }
+
+    private static void printQualifiers(String mainPath, String[] fileNames) {
+        ArrayList<String> qualifierList = Parser.getQualifierValues(mainPath, fileNames);
+        for (String qualifier : qualifierList) {
+            System.out.println(qualifier);
+        }
+    }
+}
