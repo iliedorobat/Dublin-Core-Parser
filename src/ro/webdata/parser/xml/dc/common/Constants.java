@@ -1,4 +1,4 @@
-package ro.webdata.dc.parser.common;
+package ro.webdata.parser.xml.dc.common;
 
 public class Constants {
     public static final String FILE_STORAGE = "files";

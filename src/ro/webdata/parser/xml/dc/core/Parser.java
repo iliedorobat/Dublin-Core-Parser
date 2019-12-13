@@ -1,13 +1,13 @@
-package ro.webdata.dc.parser.core;
+package ro.webdata.parser.xml.dc.core;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
-import ro.webdata.dc.parser.common.Constants;
-import ro.webdata.dc.parser.core.attribute.DcQualifier;
-import ro.webdata.dc.parser.core.leaf.dcValue.DcValue;
-import ro.webdata.dc.parser.core.wrapper.dc.DcWrapper;
-import ro.webdata.dc.parser.core.wrapper.dc.DcWrapperParser;
+import ro.webdata.parser.xml.dc.common.Constants;
+import ro.webdata.parser.xml.dc.core.attribute.DcQualifier;
+import ro.webdata.parser.xml.dc.core.leaf.dcValue.DcValue;
+import ro.webdata.parser.xml.dc.core.wrapper.dc.DcWrapper;
+import ro.webdata.parser.xml.dc.core.wrapper.dc.DcWrapperParser;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -15,7 +15,6 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -62,6 +61,5 @@ public class Parser {
         }
 
         return set;
-//        return Arrays.copyOf(set.toArray(), set.size(), String[].class);
     }
 }

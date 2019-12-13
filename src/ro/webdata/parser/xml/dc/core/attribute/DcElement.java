@@ -1,4 +1,4 @@
-package ro.webdata.dc.parser.core.attribute;
+package ro.webdata.parser.xml.dc.core.attribute;
 
 public class DcElement implements Attribute {
     private String element;

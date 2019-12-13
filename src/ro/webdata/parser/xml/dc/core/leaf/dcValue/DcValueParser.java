@@ -1,11 +1,11 @@
-package ro.webdata.dc.parser.core.leaf.dcValue;
+package ro.webdata.parser.xml.dc.core.leaf.dcValue;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import ro.webdata.dc.parser.common.Utils;
-import ro.webdata.dc.parser.core.attribute.DcElement;
-import ro.webdata.dc.parser.core.attribute.DcLanguage;
-import ro.webdata.dc.parser.core.attribute.DcQualifier;
+import ro.webdata.parser.xml.dc.common.Utils;
+import ro.webdata.parser.xml.dc.core.attribute.DcElement;
+import ro.webdata.parser.xml.dc.core.attribute.DcLanguage;
+import ro.webdata.parser.xml.dc.core.attribute.DcQualifier;
 
 import java.util.HashMap;
 

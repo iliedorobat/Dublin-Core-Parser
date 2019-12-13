@@ -1,4 +1,4 @@
-package ro.webdata.dc.parser.common;
+package ro.webdata.parser.xml.dc.common;
 
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;

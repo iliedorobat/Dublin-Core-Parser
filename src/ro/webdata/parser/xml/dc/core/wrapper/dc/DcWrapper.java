@@ -1,6 +1,6 @@
-package ro.webdata.dc.parser.core.wrapper.dc;
+package ro.webdata.parser.xml.dc.core.wrapper.dc;
 
-import ro.webdata.dc.parser.core.leaf.dcValue.DcValue;
+import ro.webdata.parser.xml.dc.core.leaf.dcValue.DcValue;
 
 import java.util.ArrayList;
 

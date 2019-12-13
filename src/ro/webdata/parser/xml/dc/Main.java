@@ -1,7 +1,7 @@
-package ro.webdata.dc.parser;
+package ro.webdata.parser.xml.dc;
 
-import ro.webdata.dc.parser.common.Constants;
-import ro.webdata.dc.parser.core.Parser;
+import ro.webdata.parser.xml.dc.common.Constants;
+import ro.webdata.parser.xml.dc.core.Parser;
 
 import java.util.ArrayList;
 

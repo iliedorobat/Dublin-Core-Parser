@@ -1,8 +1,8 @@
-package ro.webdata.dc.parser.core.leaf.dcValue;
+package ro.webdata.parser.xml.dc.core.leaf.dcValue;
 
-import ro.webdata.dc.parser.core.attribute.DcElement;
-import ro.webdata.dc.parser.core.attribute.DcLanguage;
-import ro.webdata.dc.parser.core.attribute.DcQualifier;
+import ro.webdata.parser.xml.dc.core.attribute.DcElement;
+import ro.webdata.parser.xml.dc.core.attribute.DcLanguage;
+import ro.webdata.parser.xml.dc.core.attribute.DcQualifier;
 
 public class DcValue {
     private String text;
