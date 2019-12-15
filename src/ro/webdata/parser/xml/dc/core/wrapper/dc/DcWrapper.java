@@ -3,21 +3,22 @@ package ro.webdata.parser.xml.dc.core.wrapper.dc;
 import ro.webdata.parser.xml.dc.core.leaf.dcValue.DcValue;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DcWrapper {
-    private ArrayList<DcValue> dcValue = new ArrayList<>();
+    private HashMap<String, ArrayList<DcValue>> dcValueMap = new HashMap<>();
 
     private DcWrapper() {}
 
-    public DcWrapper(ArrayList<DcValue> dcValue) {
-        setDcValue(dcValue);
+    public DcWrapper(HashMap<String, ArrayList<DcValue>> dcValueMap) {
+        setDcValueMap(dcValueMap);
     }
 
-    public ArrayList<DcValue> getDcValue() {
-        return dcValue;
+    public HashMap<String, ArrayList<DcValue>> getDcValueMap() {
+        return dcValueMap;
     }
 
-    public void setDcValue(ArrayList<DcValue> dcValue) {
-        this.dcValue = dcValue;
+    public void setDcValueMap(HashMap<String, ArrayList<DcValue>> dcValueMap) {
+        this.dcValueMap = dcValueMap;
     }
 }

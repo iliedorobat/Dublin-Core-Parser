@@ -14,9 +14,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Parser {
     public static DcWrapper parseDcXmlFile(String filePath) {
@@ -53,11 +51,15 @@ public class Parser {
     private static Set<String> getQualifierValues(String filePath) {
         Set<String> set = new HashSet<>();
         DcWrapper dcWrapper = Parser.parseDcXmlFile(filePath);
-        ArrayList<DcValue> dcValueList = dcWrapper.getDcValue();
+        HashMap<String, ArrayList<DcValue>> dcValueMap = dcWrapper.getDcValueMap();
 
-        for (DcValue dcValue : dcValueList) {
-            DcQualifier qualifier = dcValue.getQualifier();
-            set.add(qualifier.getAttrValue());
+        for (Map.Entry<String, ArrayList<DcValue>> entry : dcValueMap.entrySet()) {
+            ArrayList<DcValue> dcValueList = entry.getValue();
+
+            for (DcValue dcValue : dcValueList) {
+                DcQualifier qualifier = dcValue.getQualifier();
+                set.add(qualifier.getAttrValue());
+            }
         }
 
         return set;

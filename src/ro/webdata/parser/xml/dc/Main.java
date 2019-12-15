@@ -4,6 +4,7 @@ import ro.webdata.parser.xml.dc.common.Constants;
 import ro.webdata.parser.xml.dc.core.Parser;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Main {
     private static final String FILE_FULL_PATH = Constants.WORKSPACE_PATH
