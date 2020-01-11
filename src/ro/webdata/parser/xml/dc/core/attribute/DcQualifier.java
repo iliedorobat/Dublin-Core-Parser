@@ -1,5 +1,7 @@
 package ro.webdata.parser.xml.dc.core.attribute;
 
+import ro.webdata.parser.xml.dc.core.attribute.record.BasicRecord;
+
 public class DcQualifier implements Attribute {
     private String qualifier;
 
@@ -22,10 +24,10 @@ public class DcQualifier implements Attribute {
     }
 
     public boolean isEmpty() {
-        return this.qualifier.equals(AttributeValue.EMPTY);
+        return this.qualifier.equals(BasicRecord.QUALIFIER_EMPTY);
     }
 
     public boolean isNone() {
-        return this.qualifier.equals(AttributeValue.NONE);
+        return this.qualifier.equals(BasicRecord.QUALIFIER_NONE);
     }
 }

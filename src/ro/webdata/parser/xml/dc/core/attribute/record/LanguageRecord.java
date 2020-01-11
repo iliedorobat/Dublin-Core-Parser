@@ -7,6 +7,6 @@ public class LanguageRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_LANGUAGE;
 
-    public static final String ISO_QUALIFIER = AttributeValue.QUALIFIER_ISO;
-    public static final String RFC_3066_QUALIFIER = AttributeValue.QUALIFIER_RFC_3066;
+    public static final String QUALIFIER_ISO = AttributeValue.QUALIFIER_ISO;
+    public static final String QUALIFIER_RFC_3066 = AttributeValue.QUALIFIER_RFC_3066;
 }

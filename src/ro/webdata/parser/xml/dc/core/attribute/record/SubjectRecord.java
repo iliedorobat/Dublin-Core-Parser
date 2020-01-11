@@ -7,10 +7,10 @@ public class SubjectRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_SUBJECT;
     
-    public static final String CLASSIFICATION_QUALIFIER = AttributeValue.QUALIFIER_CLASSIFICATION;
-    public static final String DDC_QUALIFIER = AttributeValue.QUALIFIER_DDC;
-    public static final String LCC_QUALIFIER = AttributeValue.QUALIFIER_LCC;
-    public static final String LCSH_QUALIFIER = AttributeValue.QUALIFIER_LCSH;
-    public static final String MESH_QUALIFIER = AttributeValue.QUALIFIER_MESH;
-    public static final String OTHER_QUALIFIER = AttributeValue.QUALIFIER_OTHER;
+    public static final String QUALIFIER_CLASSIFICATION = AttributeValue.QUALIFIER_CLASSIFICATION;
+    public static final String QUALIFIER_DDC = AttributeValue.QUALIFIER_DDC;
+    public static final String QUALIFIER_LCC = AttributeValue.QUALIFIER_LCC;
+    public static final String QUALIFIER_LCSH = AttributeValue.QUALIFIER_LCSH;
+    public static final String QUALIFIER_MESH = AttributeValue.QUALIFIER_MESH;
+    public static final String QUALIFIER_OTHER = AttributeValue.QUALIFIER_OTHER;
 }

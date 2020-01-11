@@ -7,14 +7,14 @@ public class IdentifierRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_IDENTIFIER;
     
-    public static final String CITATION_QUALIFIER = AttributeValue.QUALIFIER_CITATION;
-    public static final String GOV_DOC_QUALIFIER = AttributeValue.QUALIFIER_GOV_DOC;
-    public static final String ISBN_QUALIFIER = AttributeValue.QUALIFIER_ISBN;
-    public static final String ISMN_QUALIFIER = AttributeValue.QUALIFIER_ISMN;
-    public static final String ISSN_QUALIFIER = AttributeValue.QUALIFIER_ISSN;
-    public static final String OTHER_QUALIFIER = AttributeValue.QUALIFIER_OTHER;
-    public static final String SICI_QUALIFIER = AttributeValue.QUALIFIER_SICI;
-    public static final String SLUG_QUALIFIER = AttributeValue.QUALIFIER_SLUG;
-    public static final String T100_QUALIFIER = AttributeValue.QUALIFIER_T100;
-    public static final String URI_QUALIFIER = AttributeValue.QUALIFIER_URI;
+    public static final String QUALIFIER_CITATION = AttributeValue.QUALIFIER_CITATION;
+    public static final String QUALIFIER_GOV_DOC = AttributeValue.QUALIFIER_GOV_DOC;
+    public static final String QUALIFIER_ISBN = AttributeValue.QUALIFIER_ISBN;
+    public static final String QUALIFIER_ISMN = AttributeValue.QUALIFIER_ISMN;
+    public static final String QUALIFIER_ISSN = AttributeValue.QUALIFIER_ISSN;
+    public static final String QUALIFIER_OTHER = AttributeValue.QUALIFIER_OTHER;
+    public static final String QUALIFIER_SICI = AttributeValue.QUALIFIER_SICI;
+    public static final String QUALIFIER_SLUG = AttributeValue.QUALIFIER_SLUG;
+    public static final String QUALIFIER_T100 = AttributeValue.QUALIFIER_T100;
+    public static final String QUALIFIER_URI = AttributeValue.QUALIFIER_URI;
 }

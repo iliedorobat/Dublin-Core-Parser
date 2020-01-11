@@ -7,6 +7,6 @@ public class RightsRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_RIGHTS;
 
-    public static final String HOLDER_QUALIFIER = AttributeValue.QUALIFIER_HOLDER;
-    public static final String URI_QUALIFIER = AttributeValue.QUALIFIER_URI;
+    public static final String QUALIFIER_HOLDER = AttributeValue.QUALIFIER_HOLDER;
+    public static final String QUALIFIER_URI = AttributeValue.QUALIFIER_URI;
 }

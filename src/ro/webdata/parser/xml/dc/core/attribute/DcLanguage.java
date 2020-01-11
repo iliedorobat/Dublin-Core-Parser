@@ -1,5 +1,7 @@
 package ro.webdata.parser.xml.dc.core.attribute;
 
+import ro.webdata.parser.xml.dc.core.attribute.record.BasicRecord;
+
 public class DcLanguage implements Attribute {
     private String language;
 
@@ -22,10 +24,10 @@ public class DcLanguage implements Attribute {
     }
 
     public boolean isEmpty() {
-        return this.language.equals(AttributeValue.EMPTY);
+        return this.language.equals(BasicRecord.LANGUAGE_EMPTY);
     }
 
     public boolean isNone() {
-        return this.language.equals(AttributeValue.NONE);
+        return this.language.equals(BasicRecord.LANGUAGE_NONE);
     }
 }

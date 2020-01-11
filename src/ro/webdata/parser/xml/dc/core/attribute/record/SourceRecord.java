@@ -7,5 +7,5 @@ public class SourceRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_SOURCE;
 
-    public static final String URI_QUALIFIER = AttributeValue.QUALIFIER_URI;
+    public static final String QUALIFIER_URI = AttributeValue.QUALIFIER_URI;
 }
