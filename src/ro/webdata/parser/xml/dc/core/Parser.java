@@ -58,7 +58,7 @@ public class Parser {
 
             for (DcValue dcValue : dcValueList) {
                 DcQualifier qualifier = dcValue.getQualifier();
-                set.add(qualifier.getAttrValue());
+                set.add(qualifier.getValue());
             }
         }
 

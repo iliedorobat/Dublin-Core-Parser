@@ -9,11 +9,23 @@ public class DcLanguage implements Attribute {
         this.language = language;
     }
 
-    public String getAttrName() {
+    public String getName() {
         return "language";
     }
 
-    public String getAttrValue() {
-        return language;
+    public String getValue() {
+        return this.language;
+    }
+
+    public boolean hasValue() {
+        return this.language != null;
+    }
+
+    public boolean isEmpty() {
+        return this.language.equals(AttributeValue.EMPTY);
+    }
+
+    public boolean isNone() {
+        return this.language.equals(AttributeValue.NONE);
     }
 }

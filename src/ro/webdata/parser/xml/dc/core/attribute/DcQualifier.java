@@ -9,11 +9,23 @@ public class DcQualifier implements Attribute {
         this.qualifier = qualifier;
     }
 
-    public String getAttrName() {
+    public String getName() {
         return "qualifier";
     }
 
-    public String getAttrValue() {
-        return qualifier;
+    public String getValue() {
+        return this.qualifier;
+    }
+
+    public boolean hasValue() {
+        return this.qualifier != null;
+    }
+
+    public boolean isEmpty() {
+        return this.qualifier.equals(AttributeValue.EMPTY);
+    }
+
+    public boolean isNone() {
+        return this.qualifier.equals(AttributeValue.NONE);
     }
 }

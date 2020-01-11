@@ -27,7 +27,7 @@ public class DcWrapperParser {
     }
 
     private static void addDcValue(HashMap<String, ArrayList<DcValue>> hashMap, DcValue dcValue) {
-        String key = dcValue.getElement().getAttrValue();
+        String key = dcValue.getElement().getValue();
         ArrayList<DcValue> currentList = generateList(hashMap, key);
         currentList.add(dcValue);
     }

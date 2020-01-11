@@ -1,6 +1,10 @@
 package ro.webdata.parser.xml.dc.core.attribute;
 
 public interface Attribute {
-    String getAttrName();
-    String getAttrValue();
+    String getName();
+    String getValue();
+
+    boolean hasValue();
+    boolean isEmpty();
+    boolean isNone();
 }

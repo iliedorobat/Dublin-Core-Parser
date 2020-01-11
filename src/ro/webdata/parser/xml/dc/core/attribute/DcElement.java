@@ -9,11 +9,23 @@ public class DcElement implements Attribute {
         this.element = element;
     }
 
-    public String getAttrName() {
+    public String getName() {
         return "element";
     }
 
-    public String getAttrValue() {
-        return element;
+    public String getValue() {
+        return this.element;
+    }
+
+    public boolean hasValue() {
+        return this.element != null;
+    }
+
+    public boolean isEmpty() {
+        return this.element.equals(AttributeValue.EMPTY);
+    }
+
+    public boolean isNone() {
+        return this.element.equals(AttributeValue.NONE);
     }
 }
