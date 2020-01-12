@@ -24,10 +24,10 @@ public class DcQualifier implements Attribute {
     }
 
     public boolean isEmpty() {
-        return this.qualifier.equals(BasicRecord.QUALIFIER_EMPTY);
+        return this.qualifier.equals(BasicRecord.REFINEMENT_EMPTY);
     }
 
     public boolean isNone() {
-        return this.qualifier.equals(BasicRecord.QUALIFIER_NONE);
+        return this.qualifier.equals(BasicRecord.REFINEMENT_EMPTY);
     }
 }

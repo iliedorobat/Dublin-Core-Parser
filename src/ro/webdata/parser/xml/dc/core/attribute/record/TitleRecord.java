@@ -7,5 +7,10 @@ public class TitleRecord extends BasicRecord {
 
     public static final String ELEMENT = AttributeValue.ELEMENT_TITLE;
 
-    public static final String QUALIFIER_ALTERNATIVE = AttributeValue.QUALIFIER_ALTERNATIVE;
+    public static final String REFINEMENT_ALTERNATIVE = AttributeValue.QUALIFIER_ALTERNATIVE;
+
+    public static final String[] REFINEMENTS = {
+            REFINEMENT_ALTERNATIVE
+    };
+    public static final String[] SCHEMES = {};
 }

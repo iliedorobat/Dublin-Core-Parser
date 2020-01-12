@@ -6,4 +6,7 @@ public class ThumbRecord extends BasicRecord {
     private ThumbRecord() {}
 
     public static final String ELEMENT = AttributeValue.ELEMENT_THUMB;
+
+    public static final String[] REFINEMENTS = {};
+    public static final String[] SCHEMES = {};
 }
