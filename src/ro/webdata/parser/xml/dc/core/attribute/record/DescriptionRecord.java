@@ -2,7 +2,7 @@ package ro.webdata.parser.xml.dc.core.attribute.record;
 
 import ro.webdata.parser.xml.dc.core.attribute.AttributeValue;
 
-public class DescriptionRecord {
+public class DescriptionRecord extends BasicRecord {
     private DescriptionRecord() {}
 
     public static final String ELEMENT = AttributeValue.ELEMENT_DESCRIPTION;
