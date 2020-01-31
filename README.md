@@ -1,2 +1,5 @@
-# DC-XML-Parser
-Java parser for metadata presented according to Dublin Core XML Schema
+# DSpace-Parser
+Java parser for metadata stored in DSpace repositories
+
+DCMI Qualifiers:<br/>
+https://www.dublincore.org/specifications/dublin-core/dcmes-qualifiers/
