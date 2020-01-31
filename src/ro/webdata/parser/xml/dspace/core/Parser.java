@@ -4,6 +4,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 import ro.webdata.parser.xml.dspace.common.Constants;
+import ro.webdata.parser.xml.dspace.core.attribute.AttributeValue;
 import ro.webdata.parser.xml.dspace.core.attribute.DcQualifier;
 import ro.webdata.parser.xml.dspace.core.leaf.dcValue.DcValue;
 import ro.webdata.parser.xml.dspace.core.wrapper.dc.DcWrapper;
@@ -17,6 +18,24 @@ import java.io.IOException;
 import java.util.*;
 
 public class Parser {
+    public static String getSchemaName(String filePath) {
+        String schemaName = null;
+        File xmlFile = new File(filePath);
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+
+        try {
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(xmlFile);
+            doc.getDocumentElement().normalize();
+            Element dcWrapperNode = doc.getDocumentElement();
+            schemaName = dcWrapperNode.getAttribute(AttributeValue.ELEMENT_SCHEMA);
+        } catch (ParserConfigurationException | SAXException | IOException e) {
+            e.printStackTrace();
+        }
+
+        return schemaName;
+    }
+
     public static DcWrapper parseDcXmlFile(String filePath) {
         DcWrapper dcWrapper = null;
         File xmlFile = new File(filePath);
