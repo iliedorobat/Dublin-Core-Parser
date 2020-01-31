@@ -2,6 +2,7 @@ package ro.webdata.parser.xml.dspace;
 
 import ro.webdata.parser.xml.dspace.common.Constants;
 import ro.webdata.parser.xml.dspace.core.Parser;
+import ro.webdata.parser.xml.dspace.core.wrapper.dc.DcWrapper;
 
 import java.util.ArrayList;
 
@@ -28,8 +29,8 @@ public class Main {
     private static void printSchemaName(String mainPath, String[] filesName) {
         for (String fileName : filesName) {
             String filePath = mainPath + Constants.FILE_SEPARATOR + fileName + ".xml";
-            String schemaName = Parser.getSchemaName(filePath);
-            System.out.println("Schema name: " + schemaName);
+            DcWrapper dcWrapper = Parser.parseDcXmlFile(filePath);
+            System.out.println("Schema name: " + dcWrapper.getSchemaName());
         }
     }
 }

@@ -6,6 +6,8 @@ public class AttributeValue {
     public static final String EMPTY = Constants.EMPTY_STRING;
     public static final String NONE = "none";
 
+    public static final String ATTRIBUTE_SCHEMA = "schema";
+
     public static final String ELEMENT_CONTRIBUTOR = "contributor";
     public static final String ELEMENT_COVERAGE = "coverage";
     public static final String ELEMENT_CREATOR = "creator";
@@ -17,7 +19,6 @@ public class AttributeValue {
     public static final String ELEMENT_PUBLISHER = "publisher";
     public static final String ELEMENT_RELATION = "relation";
     public static final String ELEMENT_RIGHTS = "rights";
-    public static final String ELEMENT_SCHEMA = "schema";
     public static final String ELEMENT_SOURCE = "source";
     public static final String ELEMENT_SUBJECT = "subject";
     public static final String ELEMENT_TITLE = "title";

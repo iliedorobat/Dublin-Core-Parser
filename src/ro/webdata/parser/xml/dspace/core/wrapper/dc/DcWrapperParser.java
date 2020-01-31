@@ -2,6 +2,7 @@ package ro.webdata.parser.xml.dspace.core.wrapper.dc;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import ro.webdata.parser.xml.dspace.core.attribute.AttributeValue;
 import ro.webdata.parser.xml.dspace.core.leaf.dcValue.DcValue;
 import ro.webdata.parser.xml.dspace.core.leaf.dcValue.DcValueParser;
 
@@ -13,6 +14,10 @@ public class DcWrapperParser {
         HashMap<String, ArrayList<DcValue>> hashMap = new HashMap<>();
 
         NodeList childNodeList = node.getChildNodes();
+        String schemaName = node.getAttributes()
+                .getNamedItem(AttributeValue.ATTRIBUTE_SCHEMA)
+                .getNodeValue();
+
         for (int i = 0; i < childNodeList.getLength(); i++) {
             Node child = childNodeList.item(i);
             String childName = child.getNodeName();
@@ -23,7 +28,7 @@ public class DcWrapperParser {
             }
         }
 
-        return new DcWrapper(hashMap);
+        return new DcWrapper(hashMap, schemaName);
     }
 
     private static void addDcValue(HashMap<String, ArrayList<DcValue>> hashMap, DcValue dcValue) {
