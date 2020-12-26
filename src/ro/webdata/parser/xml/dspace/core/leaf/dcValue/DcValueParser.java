@@ -2,7 +2,7 @@ package ro.webdata.parser.xml.dspace.core.leaf.dcValue;
 
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import ro.webdata.parser.Graph;
+import ro.webdata.echo.commons.graph.Graph;
 import ro.webdata.parser.xml.dspace.core.attribute.DcElement;
 import ro.webdata.parser.xml.dspace.core.attribute.DcLanguage;
 import ro.webdata.parser.xml.dspace.core.attribute.DcQualifier;

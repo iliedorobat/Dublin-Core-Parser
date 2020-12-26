@@ -1,9 +1,9 @@
 package ro.webdata.parser.xml.dspace.core.attribute;
 
-import ro.webdata.commons.Constants;
+import ro.webdata.echo.commons.Const;
 
 public class AttributeValue {
-    public static final String EMPTY = Constants.EMPTY_VALUE_PLACEHOLDER;
+    public static final String EMPTY = Const.EMPTY_VALUE_PLACEHOLDER;
     public static final String NONE = "none";
 
     public static final String ATTRIBUTE_SCHEMA = "schema";
