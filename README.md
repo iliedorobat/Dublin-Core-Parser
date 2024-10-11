@@ -19,3 +19,8 @@ git clone https://github.com/iliedorobat/Dublin-Core-Parser.git
 ```bash
 mvn validate && mvn clean package
 ```
+
+## Test the library:
+```bash
+java -jar target/Dublin-Core-Parser-1.1-jar-with-dependencies.jar
+```
