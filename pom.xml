@@ -63,17 +63,17 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-install-plugin</artifactId>
-                <configuration>
-                    <groupId>ro.webdata.echo.commons</groupId>
-                    <artifactId>commons-echo</artifactId>
-                    <version>1.3</version>
-                    <packaging>jar</packaging>
-                    <file>${project.basedir}/src/main/resources/commons-echo-1.3.jar</file>
-                    <generatePom>true</generatePom>
-                </configuration>
                 <executions>
                     <execution>
-                        <id>install-jar-lib</id>
+                        <id>install-commons-echo</id>
+                        <configuration>
+                            <groupId>ro.webdata.echo.commons</groupId>
+                            <artifactId>commons-echo</artifactId>
+                            <version>1.3</version>
+                            <packaging>jar</packaging>
+                            <file>${project.basedir}/src/main/resources/commons-echo-1.3.jar</file>
+                            <generatePom>true</generatePom>
+                        </configuration>
                         <goals>
                             <goal>install-file</goal>
                         </goals>
