@@ -4,7 +4,7 @@ import ro.webdata.parser.xml.dspace.common.Constants;
 import ro.webdata.parser.xml.dspace.core.Parser;
 import ro.webdata.parser.xml.dspace.core.wrapper.dc.DcWrapper;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     private static final String FILE_FULL_PATH = Constants.WORKSPACE_PATH
@@ -20,7 +20,7 @@ public class Main {
     }
 
     private static void printQualifiers(String mainPath, String[] fileNames) {
-        ArrayList<String> qualifierList = Parser.getQualifierValues(mainPath, fileNames);
+        List<String> qualifierList = Parser.getQualifierValues(mainPath, fileNames);
         for (String qualifier : qualifierList) {
             System.out.println(qualifier);
         }

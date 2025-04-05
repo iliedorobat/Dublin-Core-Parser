@@ -7,12 +7,12 @@ import ro.webdata.parser.xml.dspace.core.attribute.DcElement;
 import ro.webdata.parser.xml.dspace.core.attribute.DcLanguage;
 import ro.webdata.parser.xml.dspace.core.attribute.DcQualifier;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public class DcValueParser {
     public static DcValue getDcValue(Node node) {
         DcValue dcValue = null;
-        HashMap<String, String> attributes = Graph.getAttributes(node);
+        Map<String, String> attributes = Graph.getAttributes(node);
 
         NodeList childNodeList = node.getChildNodes();
         int len = childNodeList.getLength();

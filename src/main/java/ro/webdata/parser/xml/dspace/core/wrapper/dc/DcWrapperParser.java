@@ -8,10 +8,12 @@ import ro.webdata.parser.xml.dspace.core.leaf.dcValue.DcValueParser;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class DcWrapperParser {
     public static DcWrapper getDcWrapper(Node node) {
-        HashMap<String, ArrayList<DcValue>> hashMap = new HashMap<>();
+        Map<String, List<DcValue>> hashMap = new HashMap<>();
 
         NodeList childNodeList = node.getChildNodes();
         String schemaName = node.getAttributes()
@@ -31,19 +33,19 @@ public class DcWrapperParser {
         return new DcWrapper(hashMap, schemaName);
     }
 
-    private static void addDcValue(HashMap<String, ArrayList<DcValue>> hashMap, DcValue dcValue) {
+    private static void addDcValue(Map<String, List<DcValue>> hashMap, DcValue dcValue) {
         String key = dcValue.getElement().getValue();
-        ArrayList<DcValue> currentList = generateList(hashMap, key);
+        List<DcValue> currentList = generateList(hashMap, key);
         currentList.add(dcValue);
     }
 
-    private static ArrayList<DcValue> generateList(HashMap<String, ArrayList<DcValue>> hashMap, String key) {
-        ArrayList<DcValue> currentList = hashMap.get(key);
+    private static List<DcValue> generateList(Map<String, List<DcValue>> hashMap, String key) {
+        List<DcValue> currentList = hashMap.get(key);
 
         // If in "hashMap" there isn't any record with the specified key,
         // create the record and return it
         if (currentList == null) {
-            ArrayList<DcValue> list = new ArrayList<>();
+            List<DcValue> list = new ArrayList<>();
             hashMap.put(key, list);
             return list;
         }
