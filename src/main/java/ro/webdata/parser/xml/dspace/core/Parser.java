@@ -4,7 +4,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 import ro.webdata.parser.xml.dspace.common.Constants;
-import ro.webdata.parser.xml.dspace.core.attribute.AttributeValue;
 import ro.webdata.parser.xml.dspace.core.attribute.DcQualifier;
 import ro.webdata.parser.xml.dspace.core.leaf.dcValue.DcValue;
 import ro.webdata.parser.xml.dspace.core.wrapper.dc.DcWrapper;
@@ -36,7 +35,7 @@ public class Parser {
         return dcWrapper;
     }
 
-    public static ArrayList<String> getQualifierValues(String mainPath, String[] filesName) {
+    public static List<String> getQualifierValues(String mainPath, String[] filesName) {
         Set<String> set = new HashSet<>();
 
         for (String fileName : filesName) {
@@ -52,10 +51,10 @@ public class Parser {
     private static Set<String> getQualifierValues(String filePath) {
         Set<String> set = new HashSet<>();
         DcWrapper dcWrapper = Parser.parseDcXmlFile(filePath);
-        HashMap<String, ArrayList<DcValue>> dcValueMap = dcWrapper.getDcValueMap();
+        Map<String, List<DcValue>> dcValueMap = dcWrapper.getDcValueMap();
 
-        for (Map.Entry<String, ArrayList<DcValue>> entry : dcValueMap.entrySet()) {
-            ArrayList<DcValue> dcValueList = entry.getValue();
+        for (Map.Entry<String, List<DcValue>> entry : dcValueMap.entrySet()) {
+            List<DcValue> dcValueList = entry.getValue();
 
             for (DcValue dcValue : dcValueList) {
                 DcQualifier qualifier = dcValue.getQualifier();
