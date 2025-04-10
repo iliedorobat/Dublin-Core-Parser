@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation files('libs/commons-echo-1.5.jar')
+    implementation files('libs/commons-echo-1.6.jar')
 }
 
 group = 'ro.webdata.parser.xml.dspace'

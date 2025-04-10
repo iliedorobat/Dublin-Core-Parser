@@ -2,7 +2,7 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 
 [versions]
-ro-webdata-echo-commons-commons-echo = "1.5"
+ro-webdata-echo-commons-commons-echo = "1.6"
 
 [libraries]
 ro-webdata-echo-commons-commons-echo = { module = "ro.webdata.echo.commons:commons-echo", version.ref = "ro-webdata-echo-commons-commons-echo" }
